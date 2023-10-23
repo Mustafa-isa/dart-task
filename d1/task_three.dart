@@ -6,7 +6,11 @@ void main(){
 custom_reducer (list ,Function callbcak ,accsl){
   dynamic result =0; 
 for(var i =0 ;i < list.length ;i++){
-result +=  callbcak(list[i] ,list[i]);
+// result +=  callbcak(list[i] ,list[i]);
+result+= list[i];
+
+
 }
+result += accsl; 
 print(result);
 }
